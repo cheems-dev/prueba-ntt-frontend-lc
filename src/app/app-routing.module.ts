@@ -1,0 +1,25 @@
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  {
+    path: 'home',
+    loadChildren: () =>
+      import('./songs-list/songs-list.module').then(
+        (m) => m.SongsListPageModule
+      ),
+  },
+  {
+    path: 'song-form',
+    loadChildren: () =>
+      import('./song-form/song-form.module').then((m) => m.SongFormPageModule),
+  },
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules }),
+  ],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
