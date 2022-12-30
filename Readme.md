@@ -5,6 +5,9 @@
 
 </p>
 
+## Source
+Backend : https://github.com/cheems-dev/ntt-back
+
 ## Tareas completadas
 
 - [x] Crear una base de datos en MongoDB Atlas e integrarlo con backend.
@@ -16,6 +19,5 @@
 - [ ] Testing
 
 ## Incovenientes
-
 1. Testing:
    Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar Google en WSL2 y añadir la variable de entorno a .zshrc sigue persistiendo el error mencionado.
