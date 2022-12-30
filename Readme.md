@@ -10,5 +10,5 @@
 - [ ] Testing
 
 ## Incovenientes
-
-Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar en WSL2 sigue persistiendo el error mencionado.
+1. Testing
+Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar en WSL2 y añadir la variable de entorno a .zshrc sigue persistiendo el error mencionado.
