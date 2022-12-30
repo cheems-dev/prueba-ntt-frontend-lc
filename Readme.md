@@ -3,6 +3,7 @@
 ## Tareas completadas
 
 - [x] Crear una base de datos en MongoDB Atlas e integrarlo con backend.
+- [x] Solucion de bugs en backend para el correcto deployment.
 - [x] Deploy de [backend](https://github.com/cheems-dev/ntt-back) en fly.io.
 - [x] Deploy del [frontend](https://beautiful-crumble-e48f83.netlify.app/) en Netlify.
 - [x] Implementación de CRUD en ionic.
@@ -10,5 +11,6 @@
 - [ ] Testing
 
 ## Incovenientes
-1. Testing
-Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar en WSL2 y añadir la variable de entorno a .zshrc sigue persistiendo el error mencionado.
+
+1. Testing:
+   Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar en WSL2 y añadir la variable de entorno a .zshrc sigue persistiendo el error mencionado.
