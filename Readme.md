@@ -1,5 +1,9 @@
 ## SONGS PLATFORM
+<p align="center">
 
+![image](https://user-images.githubusercontent.com/38531618/210079249-90f23e19-8a0c-4b00-8342-5c04709aa49d.png)
+
+</p>
 ## Tareas completadas
 
 - [x] Crear una base de datos en MongoDB Atlas e integrarlo con backend.
@@ -13,4 +17,4 @@
 ## Incovenientes
 
 1. Testing:
-   Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar en WSL2 y añadir la variable de entorno a .zshrc sigue persistiendo el error mencionado.
+   Karma pide una variable de entorno CHROME_BIN a pesar de intentar instalar Google en WSL2 y añadir la variable de entorno a .zshrc sigue persistiendo el error mencionado.
