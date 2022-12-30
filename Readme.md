@@ -4,6 +4,7 @@
 ![image](https://user-images.githubusercontent.com/38531618/210079249-90f23e19-8a0c-4b00-8342-5c04709aa49d.png)
 
 </p>
+
 ## Tareas completadas
 
 - [x] Crear una base de datos en MongoDB Atlas e integrarlo con backend.
