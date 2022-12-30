@@ -3,14 +3,14 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     loadChildren: () =>
       import('./songs-list/songs-list.module').then(
         (m) => m.SongsListPageModule
       ),
   },
   {
-    path: 'song-form',
+    path: 'edit/:id',
     loadChildren: () =>
       import('./song-form/song-form.module').then((m) => m.SongFormPageModule),
   },

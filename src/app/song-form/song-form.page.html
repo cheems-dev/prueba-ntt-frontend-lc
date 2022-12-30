@@ -1,8 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>song-form</ion-title>
+    <ion-title>Editar cancion</ion-title>
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
+      <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -11,24 +11,29 @@
   ><ion-list>
     <ion-item>
       <ion-label position="stacked">Nombre de la cancion</ion-label>
-      <!-- TODO: Pending ngModel  [(ngModel)]="song.song_name"-->
       <ion-input
         type="text"
-        [clearInput]="true"
         placeholder="Nombre"
         #song_name
+        required="true"
+        value="{{song.song_name}}"
       ></ion-input>
     </ion-item>
     <ion-item>
       <ion-label position="stacked">Artista</ion-label>
       <!-- value="Default value" -->
-      <ion-input [clearInput]="true" placeholder="Nombre" #artist></ion-input>
+      <ion-input
+        placeholder="Nombre"
+        #artist
+        required="true"
+        value="{{song.artist}}"
+      ></ion-input>
     </ion-item>
 
     <ion-button
       color="primary"
       expand="full"
-      (click)="submitForm(song_name, artist)"
+      (click)="submitForm(song._id, song_name, artist)"
       >Confirm</ion-button
     >
   </ion-list>
