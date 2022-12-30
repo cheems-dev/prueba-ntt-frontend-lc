@@ -22,7 +22,7 @@ export class SongsListPage implements OnInit {
     this.loadSongs();
   }
 
-  inViewWillEnter() {
+  ionViewDidEnter() {
     this.loadSongs();
   }
 
