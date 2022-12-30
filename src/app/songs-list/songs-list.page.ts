@@ -30,10 +30,6 @@ export class SongsListPage implements OnInit {
     this.songService.getSongs().subscribe(
       (res) => {
         this.songs = res;
-        console.log(
-          '🚀 ~ file: songs-list.page.ts:21 ~ SongsListPage ~ loadSongs ~ res',
-          res
-        );
       },
       (error: Error) => {
         console.log(error);
@@ -60,6 +56,7 @@ export class SongsListPage implements OnInit {
 
   async formAlert() {
     const alert = await this.alertController.create({
+      id: '#form_create',
       header: 'Registrar',
       subHeader: 'Añade una nueva cancion',
       inputs: [
@@ -81,6 +78,7 @@ export class SongsListPage implements OnInit {
       buttons: [
         {
           text: 'Cancelar',
+          cssClass: 'alert-button-cancel',
         },
         {
           text: 'Crear',

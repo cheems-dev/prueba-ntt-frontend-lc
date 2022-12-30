@@ -7,34 +7,38 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content
-  ><ion-list>
-    <ion-item>
-      <ion-label position="stacked">Nombre de la cancion</ion-label>
-      <ion-input
-        type="text"
-        placeholder="Nombre"
-        #song_name
-        required="true"
-        value="{{song.song_name}}"
-      ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="stacked">Artista</ion-label>
-      <!-- value="Default value" -->
-      <ion-input
-        placeholder="Nombre"
-        #artist
-        required="true"
-        value="{{song.artist}}"
-      ></ion-input>
-    </ion-item>
+<ion-content>
+  <div class="song-form__container">
+    <ion-list class="song-form__component">
+      <h1 class="song-form__title">Formulario</h1>
+      <ion-item>
+        <ion-label position="stacked">Nombre de la cancion</ion-label>
+        <ion-input
+          type="text"
+          placeholder="Nombre"
+          #song_name
+          required="true"
+          value="{{song.song_name}}"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Artista</ion-label>
+        <!-- value="Default value" -->
+        <ion-input
+          placeholder="Nombre"
+          #artist
+          required="true"
+          value="{{song.artist}}"
+        ></ion-input>
+      </ion-item>
 
-    <ion-button
-      color="primary"
-      expand="full"
-      (click)="submitForm(song._id, song_name, artist)"
-      >Confirm</ion-button
-    >
-  </ion-list>
+      <ion-button
+        color="primary"
+        expand="full"
+        (click)="submitForm(song._id, song_name, artist)"
+        shape="round"
+        >Actualizar</ion-button
+      >
+    </ion-list>
+  </div>
 </ion-content>

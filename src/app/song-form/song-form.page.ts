@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Song } from '../models/Song.model';
 import { SongService } from '../services/song.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-song-form',
@@ -13,7 +13,8 @@ export class SongFormPage implements OnInit {
 
   constructor(
     private songService: SongService,
-    private activatedRoute: ActivatedRoute
+    private activatedRoute: ActivatedRoute,
+    private router: Router
   ) {
     this.song = { _id: '', artist: '', song_name: '' };
   }
@@ -47,7 +48,7 @@ export class SongFormPage implements OnInit {
       };
 
       this.songService.updateSongById(id, data).subscribe(
-        (res) => console.log(res),
+        (res) => this.router.navigate(['/']),
         (error) => console.log(error)
       );
     }

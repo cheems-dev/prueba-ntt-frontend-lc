@@ -1,0 +1,20 @@
+.song-form__component {
+  width: 400px;
+  padding: 32px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.song-form__container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-form__title {
+  text-align: center;
+}

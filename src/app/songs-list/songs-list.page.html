@@ -14,8 +14,12 @@
             src="https://p4.wallpaperbetter.com/wallpaper/561/139/745/bocchi-the-rock-anime-anime-girls-hd-wallpaper-preview.jpg"
           />
           <ion-card-header>
-            <ion-card-title>{{song?.artist}}</ion-card-title>
-            <ion-card-subtitle>{{song?.song_name}}</ion-card-subtitle>
+            <ion-card-title class="song-list__title"
+              >{{song?.artist}}</ion-card-title
+            >
+            <ion-card-subtitle class="song-list__subtitle"
+              >{{song?.song_name}}</ion-card-subtitle
+            >
           </ion-card-header>
 
           <ion-card-content class="song-list__container--button">
@@ -23,6 +27,7 @@
               fill="outline"
               size="small"
               [routerLink]="['/edit/', song?._id]"
+              shape="round"
             >
               Editar
               <ion-icon slot="start" name="create"></ion-icon>
@@ -33,6 +38,7 @@
               size="small"
               color="danger"
               (click)="deleteAlert(song?._id)"
+              shape="round"
             >
               Borrar
               <ion-icon slot="start" name="trash"></ion-icon>
